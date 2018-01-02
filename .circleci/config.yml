@@ -11,4 +11,6 @@ jobs:
       - checkout
       - run:
           name: "run go code"
-          command: go run main.go
+          command: |
+            git --no-pager log
+            go run main.go
