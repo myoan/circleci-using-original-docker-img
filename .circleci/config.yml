@@ -19,7 +19,8 @@ jobs:
             cd go-github-test
             git config --global user.email "motoki.yoan@gmail.com"
             git config --global user.name "myoan"
-            git checkout -b "hogehoge"
+            CI_BRANCH_NAME=br-`date +"%Y%m%d%I%M%S"`
+            git checkout -b $CI_BRANCH_NAME
             echo 'hogehoge' >> go-file
             git commit -am "hogehoge"
-            git push origin hogehoge
+            git push origin $CI_BRANCH_NAME
