@@ -14,6 +14,8 @@ jobs:
           command: |
             git clone git@github.com:myoan/go-github-test.git
             cd go-github-test
+            git config --global user.email "motoki.yoan@gmail.com"
+            git config --global user.name "myoan"
             git checkout -b "hogehoge"
             echo 'hogehoge' >> go-file
             git commit -a
