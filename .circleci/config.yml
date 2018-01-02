@@ -23,4 +23,3 @@ jobs:
             echo 'hogehoge' >> go-file
             git commit -am "hogehoge"
             git push origin hogehoge
-            go run main.go
