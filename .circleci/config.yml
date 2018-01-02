@@ -18,6 +18,6 @@ jobs:
             git config --global user.name "myoan"
             git checkout -b "hogehoge"
             echo 'hogehoge' >> go-file
-            git commit -a
+            git commit -am "hogehoge"
             git push origin hogehoge
             go run main.go
