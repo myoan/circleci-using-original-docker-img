@@ -12,5 +12,10 @@ jobs:
       - run:
           name: "run go code"
           command: |
-            git --no-pager log
+            git clone git@github.com:myoan/go-github-test.git
+            cd go-github-test
+            git checkout -b "hogehoge"
+            echo 'hogehoge' >> go-file
+            git commit -a
+            git push origin hogehoge
             go run main.go
