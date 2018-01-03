@@ -22,5 +22,6 @@ jobs:
             CI_BRANCH_NAME=br-`date +"%Y%m%d%I%M%S"`
             git checkout -b $CI_BRANCH_NAME
             echo 'hogehoge' >> go-file
+            git add go-file
             git commit -am "hogehoge"
             git push origin $CI_BRANCH_NAME
