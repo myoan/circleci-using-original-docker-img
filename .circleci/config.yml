@@ -8,6 +8,9 @@ jobs:
     docker:
       - image: golang:1.9.2
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "3d:8e:5b:92:27:4d:ec:f2:7e:c8:1c:24:db:9a:87:a0"
       - checkout
       - run:
           name: "run go code"
